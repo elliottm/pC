@@ -1,39 +1,10 @@
-<!DOCTYPE html>
-<!-- This site was created in Webflow. http://www.webflow.com-->
-<!-- Last Published: Mon Jun 30 2014 16:35:22 GMT+0000 (UTC) -->
-<html data-wf-site="53b191bb0dafe9aa5320894b">
-<head>
-  <meta charset="utf-8">
-  <title>eatCode</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="generator" content="Webflow">
-  <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/webflow.css">
-  <link rel="stylesheet" type="text/css" href="stylesheets/whitespace1404146029621.webflow.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.4.7/webfont.js"></script>
-  <script>
-    WebFont.load({
-      google: {
-        families: ["Roboto:100,100italic,300,300italic,regular,italic,500,500italic,700,700italic,900,900italic"]
-      }
-    });
-  </script>
-  <script type="text/javascript" src="javascript/modernizr.js"></script>
-  <link rel="shortcut icon" type="image/x-icon" href="images/favicon.ico">
-  <link rel="apple-touch-icon" href="images/Webclip-salmon.jpg">
-</head>
+<%= erb :'partials/head' %>
+
 <body>
   <div class="subpage-header">
-    <div class="w-nav navbar" data-collapse="medium" data-animation="default" data-duration="400" data-contain="1" data-easing="ease-in-out-quart">
-      <div class="w-container"><a class="w-nav-brand logo-container" href="/"><h1>pure<span class="logo-space">Coders</span></h1></a>
-        <nav class="w-nav-menu nav-menu-container" role="navigation"><a class="w-nav-link nav-link" href="/">Home</a><a class="w-nav-link nav-link" href="about-us.html">about</a><a class="w-nav-link nav-link" href="/features">Features</a><a class="w-nav-link nav-link" href="/pricing">Pricing</a><a class="w-nav-link nav-link"
-          href="faq.html">faq</a><a class="w-nav-link nav-link" href="/contact">contact</a>
-        </nav>
-        <div class="w-nav-button menu-button">
-          <div class="w-icon-nav-menu menu-icon"></div>
-        </div>
-      </div>
-    </div>
+    
+    <%= erb :'partials/navbanner' %>
+
     <div class="w-container header-container">
       <h2 class="header-title" data-ix="fade-in-on-load">Things we can do</h2>
       <h2 class="header-title _2" data-ix="fade-in-on-load-2">A list of our features. Amazing, no?</h2>
@@ -45,19 +16,19 @@
       <div class="w-row">
         <div class="w-col w-col-4 overall-column">
           <h4>Open source</h4>
-          <p>Re-inventing the wheel is never a choice we recommend.  pureCoders are grateful to the genius that have coded before us.  We leverage already beautifully written code where possible, to deliver better, faster and cheaper.</p><a class="link whitespace" href="#">Learn more ›</a>
+          <p>Re-inventing the wheel is never a choice we recommend.  pureCoders are grateful to the genius that have coded before us.  We leverage already beautifully written code where possible, to deliver better, faster and cheaper.</p>
         </div>
         <div class="w-col w-col-4 overall-column">
           <h4>No rubbish</h4>
-          <p>We do not use Wordpress.  We recommend you stay away from Java.  We will not patch up the old and de-graded.  It's test driven development all the way.  We humbly follow our 8th Light and pathEleven Masters accordingly.</p><a class="link whitespace" href="#">Learn more ›</a>
+          <p>We do not use Wordpress.  We recommend you stay away from Java.  We will not patch up the old and de-graded.  It's test driven development all the way.  We humbly follow our 8th Light and pathEleven Masters accordingly.</p>
         </div>
         <div class="w-col w-col-4 overall-column">
           <h4>Your style</h4>
-          <p>It's your software, you will be using, therefore it's paramont we arrange your user experience accordingly.</p><a class="link whitespace" href="#">Learn more ›</a>
+          <p>It's your software, you will be using, therefore it's paramont we arrange your user experience accordingly.</p>
         </div>
       </div>
       <div class="divider-line"></div>
-      <p>With over 50 features there’s much more to discover!&nbsp;<a href="#" class="link">Learn more ›</a>
+      <p>Google has over 50 APIs, and there's much more to discover!&nbsp;<a href="#features" class="link">Learn more ›</a>
       </p>
     </div>
   </div>
@@ -72,7 +43,7 @@
             <li class="overall-list-item">
               <img class="small-faded-icon overlay" src="images/Icon-cards.png" alt="532b6d8792a7aad640000054_Icon-cards.png">
               <h4 class="overlay-title-white">Google API integration</h4>
-              <p class="all-paragraphs-white">Google has around 50 different APIs, integrate with your Emails or Calender, or their Maps and Ad exchange services.  The power of what one can be build is growing, fast.</p>
+              <p class="all-paragraphs-white">Google has around 50 different APIs, integrate with your Emails or Calender, or their Maps and Ad exchange services.  The power of what one can build is growing, fast.</p>
             </li>
             <li class="overall-list-item">
               <img class="small-faded-icon overlay" src="images/Icon-imac.png" alt="532b6da292a7aad640000057_Icon-imac.png">
@@ -181,58 +152,21 @@
       </div>
     </div>
   </div>
+
   <div class="cta-stripe">
     <div class="w-container">
       <div class="w-row">
         <div class="w-col w-col-8 w-col-small-6 cta-column-left">
           <h3><strong>Interested?&nbsp;</strong>You can try us. We’re here to craft.</h3>
         </div>
-        <div class="w-col w-col-4 w-col-small-6 cta-column-right" data-ix="fade-in-on-scroll-right"><a class="button green" href="contact.html">Request a chat</a>
+        <div class="w-col w-col-4 w-col-small-6 cta-column-right" data-ix="fade-in-on-scroll-right"><a class="button green" href="/contact">Request a chat</a>
         </div>
       </div>
     </div>
   </div>
-  <div class="footer">
-    <div class="w-container">
-      <div class="w-row">
-        <div class="w-col w-col-3 w-col-small-6 footer-column">
-          <h6 class="footer-title">Learn more</h6><a class="link footer-link" href="#">Why whitespace</a><a class="link footer-link" href="#">Pricing</a><a class="link footer-link" href="#">Features</a>
-        </div>
-        <div class="w-col w-col-3 w-col-small-6 footer-column">
-          <h6 class="footer-title">Support</h6><a class="link footer-link" href="#">FAQ</a><a class="link footer-link" href="#">Help documents</a><a class="link footer-link" href="/">Send us a mail</a>
-        </div>
-        <div class="w-col w-col-3 w-col-small-6 footer-column">
-          <h6 class="footer-title">Community</h6><a class="link footer-link" href="#">Our Blog</a><a class="link footer-link" href="#">Forum</a><a class="link footer-link" href="#">Facebook</a>
-        </div>
-        <div class="w-col w-col-3 w-col-small-6 footer-column">
-          <h6 class="footer-title">Contact</h6><a class="link footer-link" href="mailto:info@">info@whitespace.com</a><a class="link footer-link" href="tel:">(+21) 202 102033</a>
-        </div>
-      </div>
-    </div>
-    <div class="bottom-footer">
-      <div class="w-container">
-        <div class="w-row">
-          <div class="w-col w-col-4 footer-bottom-column">
-            <p class="bottom-footer-text">© 2014 White&nbsp;Space.com</p>
-          </div>
-          <div class="w-col w-col-4 footer-bottom-column">
-            <p class="bottom-footer-text">Streetroad 302, 2211&nbsp;DE&nbsp;Chicago</p>
-          </div>
-          <div class="w-col w-col-4 footer-bottom-column">
-            <a class="w-inline-block some-block-small footer-icon" href="http://www.twitter.com" target="_blank">
-              <img src="images/Icon-twitter.png" alt="532b67a5c316399b5e000110_Icon-twitter.png">
-            </a>
-            <a class="w-inline-block some-block-small footer-icon" href="http://www.facebook.com" target="_blank">
-              <img src="images/Icon-facebook.png" alt="532b67de087b04f33e0000d8_Icon-facebook.png">
-            </a>
-            <a class="w-inline-block some-block-small footer-icon" href="http://www.google.com" target="_blank">
-              <img src="images/Icon-googleplus.png" alt="532bf552c876cc426c000158_Icon-googleplus.png">
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-  </div>
+
+  <%= erb :'partials/footer' %>
+
   <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
   <script type="text/javascript" src="javascript/webflow.js"></script>
   <!--[if lte IE 9]><script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/3.0.2/placeholders.min.js"></script><![endif]-->
